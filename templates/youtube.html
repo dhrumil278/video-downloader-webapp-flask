@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="youtube.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:ital@1&display=swap" rel="stylesheet">
+    <title>Youtube video Download</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            /* color: white; */
+        }
+
+        
+
+        .main-header {
+            font-size: 50px;
+            font-family: 'Glory', sans-serif;
+            /* color: #D65076; */
+            color: #3C2E7E;
+            text-align: center;
+            margin-top: 100px;
+            font-weight: 900;
+
+        }
+
+        .container {
+            width: 60%;
+            height: 400px;
+            margin: auto;
+            margin-top: 20px;
+            border: 1px solid #4A90E2;
+            box-shadow: 10px 10px 15px 0px #3c2e7e21;
+            border-radius: 35px;
+            display: flex;
+            /* background-color: black; */
+        }
+
+        .left-part {
+            width: 40%;
+            padding: 15px 15px;
+            border-radius: 34px 353px 90px 35px;
+            /* background-color: white; */
+            border: 1px solid #3C2E7E;
+
+        }
+
+        .left-part img {
+            width: 350px;
+            height: 350px;
+
+        }
+
+        .right-part {
+            width: 60%;
+            padding: 100px 10px;
+        }
+
+        .right-part p {
+            font-size: 30px;
+            font-family: 'Noto Sans', sans-serif;
+            color: #9B9B9B;
+
+        }
+
+        .form-content {
+            text-align: center;
+            padding: 50px 0px;
+            width: 100%;
+        }
+
+        .url {
+            width: 80%;
+            height: 30px;
+            border-radius: 5px;
+            padding: 2px 10px;
+            /* background-color: ; */
+            outline: none;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+
+        
+
+        .button {
+            margin-top: 20px;
+            margin-right: 60px;
+            text-align: right;
+        }
+
+        
+
+        option {
+            color: black;
+            background-color: white;
+        }
+
+        .btns2 {
+            width: 100px;
+            height: 40px;
+            outline: none;
+            color: white;
+            background-color: #3C2E7E;
+            box-shadow: 8px 8px 12px 0px #3c2e7e3d;
+            border: none;
+            border-radius: 10px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p class="main-header"> Video Downloader Web App </p>
+    <div class="container">
+
+        <div class="left-part">
+            <img src="{{ url_for('static', filename='images/youtube.svg') }}" alt="Your image is not load perfectly">
+        </div>
+        <div class="right-part">
+            <p>download your video in one click</p>
+            <form action="{{ url_for('youtube') }}" method="POST">
+                <div class="form-content">
+                    <input type="text" name="url" placeholder="Paste your URL here" class="url">
+                    <div class="button">
+                        <input type="submit" value="Process" class="btns2">
+                    </div>
+            </form>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

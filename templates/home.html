@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/static/home.css"> -->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet">
+
+    <title>Video Downloader</title>
+
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+                /* color: white; */
+            }
+            /* body{
+                background-color: black;
+            } */
+            .container{
+                width: 60%;
+                margin: auto;
+                /* border: 2px solid red; */
+
+            }
+            a{
+                text-decoration: none;
+            }
+            .container h1{
+                margin-top: 140px;
+                width: 100%;
+                text-align: center;
+                color: #3C2E7E;
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-size: 40px;
+                margin-bottom: 10px;
+                /* margin-top: 50px; */
+            }
+
+            .card-group{
+                /* border: 2px solid yellow; */
+                display: grid;
+                grid-template-columns: 250px 250px;
+                grid-column-gap: 50px;
+                grid-row-gap: 50px;
+                justify-content: center;
+                align-content: center;
+                padding: 100px 0px;
+            }
+            .cards{
+                display: flex;
+                flex-direction: column;
+                width: 250px;
+                height: 200px;
+                border: 2px solid #4A90E2;
+                box-shadow: 10px 10px 15px 0px #3c2e7e21;
+                border-radius: 15px;
+                text-align: center;
+                justify-content: center;
+                align-content: center;
+                
+            }
+            .cards :hover{
+                cursor: pointer;
+            }
+            /* #card1{
+                background-color: #D65076;
+                box-shadow: 0px 0px 5px 5px #D65076;
+            }
+            #card2{
+                background-color: #45B8AC;
+                box-shadow: 0px 0px 5px 5px #45B8AC;
+            } */
+            #card3{
+                background-color: #6B5B95;
+                box-shadow: 0px 0px 5px 5px #6B5B95;
+            }
+            #card4{
+                background-color: #88B04B;
+                box-shadow: 0px 0px 5px 5px #88B04B;
+            }
+            .icons{
+                font-size: 45px;
+                color: #3C2E7E;
+
+            }
+
+            .icon-name{
+                font-size: 20px;
+                color:#9B9B9B;
+            }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Video Downloader </h1>
+        <div class="card-group">
+
+            <div class="cards" id="card1">
+                <a href="/youtube">
+                    <div class="icons">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <p class="icon-name">Youtube</p>
+                </a>
+            </div>
+            <div class="cards" id="card2">
+                <a href="/facebook">
+                    <div class="icons">
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                    <p class="icon-name">Facebook</p>
+                </a>
+            </div>
+            <!-- <div class="cards" id="card3">
+                <a href="/instagramprofile.html">
+                    <div class="icons">
+                        <i class="far fa-image"></i>
+                    </div>
+                    <p class="icon-name">instagram profile photo</p>
+                </a>
+            </div>
+            <div class="cards" id="card4">
+                <a href="/instagram.html">
+                    <div class="icons">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <p class="icon-name">instagram video</p>
+                </a>
+            </div> -->
+
+        </div>
+    </div>
+</body>
+
+</html>
